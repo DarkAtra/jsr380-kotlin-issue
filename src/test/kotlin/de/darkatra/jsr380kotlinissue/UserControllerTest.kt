@@ -23,7 +23,7 @@ class UserControllerTest {
 	internal fun shouldNotCreateNewTestWithInvalidParamsKotlin() {
 		mockMvc.perform(post("/users/kotlin")
 			.param("roles", "not a role"))
-			.andExpect(model().attributeHasFieldErrors("user", "roles[]"))
+			.andExpect(model().attributeHasFieldErrors("user", "roles"))
 	}
 
 	@Test
