@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component
 
 @Component
 class RoleConverter : Converter<String, Role> {
+
 	override fun convert(name: String): Role? {
-		return Enum.ofName<Role>(name)
+		return Role.values().find { it.name == name }
 	}
 }
