@@ -1,0 +1,12 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = tab
+max_line_length = 160
+tab_width = 4
+ij_formatter_tags_enabled = false
+ij_formatter_off_tag = @formatter:off
+ij_formatter_on_tag = @formatter:on
