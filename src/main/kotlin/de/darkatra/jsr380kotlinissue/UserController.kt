@@ -11,12 +11,7 @@ import javax.validation.Valid
 @RequestMapping("/users")
 class UserController {
 
-	@PostMapping("java")
-	fun createUserJava(@Valid user: de.darkatra.jsr380kotlinissue.java.User, bindingResult: BindingResult): ModelAndView {
-		return ModelAndView("someview", "user", user)
-	}
-
-	@PostMapping("kotlin")
+	@PostMapping
 	fun createUserKotlin(@Valid user: de.darkatra.jsr380kotlinissue.kotlin.User, bindingResult: BindingResult): ModelAndView {
 		return ModelAndView("someview", "user", user)
 	}
