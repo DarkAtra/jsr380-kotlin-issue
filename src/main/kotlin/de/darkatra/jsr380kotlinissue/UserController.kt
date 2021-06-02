@@ -13,6 +13,9 @@ class UserController {
 
 	@PostMapping
 	fun createUserKotlin(@Valid user: de.darkatra.jsr380kotlinissue.kotlin.User, bindingResult: BindingResult): ModelAndView {
+
+		println("bindingResult.hasErrors() = ${bindingResult.hasErrors()}")
+
 		return ModelAndView("someview", "user", user)
 	}
 }
