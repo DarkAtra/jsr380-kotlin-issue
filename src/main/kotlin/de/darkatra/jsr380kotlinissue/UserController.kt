@@ -1,5 +1,6 @@
 package de.darkatra.jsr380kotlinissue
 
+import de.darkatra.jsr380kotlinissue.kotlin.User
 import org.springframework.stereotype.Controller
 import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.PostMapping
@@ -12,7 +13,7 @@ import javax.validation.Valid
 class UserController {
 
 	@PostMapping
-	fun createUserKotlin(@Valid user: de.darkatra.jsr380kotlinissue.kotlin.User, bindingResult: BindingResult): ModelAndView {
+	fun createUserKotlin(@Valid user: User, bindingResult: BindingResult): ModelAndView {
 		return ModelAndView("someview", "user", user)
 	}
 }
