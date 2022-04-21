@@ -1,5 +1,5 @@
-/target/
-!.mvn/wrapper/maven-wrapper.jar
+HELP.md
+target/
 
 ### STS ###
 .apt_generated
@@ -18,8 +18,16 @@
 
 ### NetBeans ###
 /nbproject/private/
-/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### Maven Wrapper ###
+.mvn
+mvnw
+mvnw.cmd
