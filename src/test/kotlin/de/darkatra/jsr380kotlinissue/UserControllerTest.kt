@@ -18,8 +18,7 @@ class UserControllerTest {
 	@Test
 	internal fun shouldNotCreateNewUserWithInvalidParamsKotlin() {
 
-		mockMvc.perform(post("/users")
-			.param("roles", "not a role"))
+		mockMvc.perform(post("/users").param("roles", "not a role"))
 			.andExpect(model().attributeHasFieldErrors("user", "roles[]"))
 	}
 }
