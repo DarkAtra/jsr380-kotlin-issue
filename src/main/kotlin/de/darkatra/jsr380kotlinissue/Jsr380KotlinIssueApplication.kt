@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class Jsr380KotlinIssueApplication
 
 fun main(args: Array<String>) {
-	runApplication<Jsr380KotlinIssueApplication>(*args)
+    runApplication<Jsr380KotlinIssueApplication>(*args)
 }

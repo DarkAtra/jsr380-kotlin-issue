@@ -12,13 +12,13 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.model
 @AutoConfigureMockMvc
 class UserControllerTest {
 
-	@Autowired
-	lateinit var mockMvc: MockMvc
+    @Autowired
+    lateinit var mockMvc: MockMvc
 
-	@Test
-	internal fun shouldNotCreateNewUserWithInvalidParamsKotlin() {
+    @Test
+    internal fun shouldNotCreateNewUserWithInvalidParamsKotlin() {
 
-		mockMvc.perform(post("/users").param("roles", "not a role"))
-			.andExpect(model().attributeHasFieldErrors("user", "roles[]"))
-	}
+        mockMvc.perform(post("/users").param("roles", "not a role"))
+            .andExpect(model().attributeHasFieldErrors("user", "roles[]"))
+    }
 }

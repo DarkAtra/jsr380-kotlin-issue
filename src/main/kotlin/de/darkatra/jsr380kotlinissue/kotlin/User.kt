@@ -5,6 +5,6 @@ import javax.validation.constraints.NotEmpty
 import javax.validation.constraints.NotNull
 
 data class User(
-	@field:NotEmpty
-	var roles: MutableSet<@NotNull Role> = HashSet()
+    @field:NotEmpty
+    var roles: MutableSet<@NotNull Role> = HashSet()
 )
